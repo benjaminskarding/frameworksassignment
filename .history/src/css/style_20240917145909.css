@@ -1,0 +1,24 @@
+@import url(_reset.css);
+
+
+body a {
+    text-decoration:  none;
+    color: inherit;
+}
+
+.PageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+
+.loginContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0 2rem 0;
+}
+

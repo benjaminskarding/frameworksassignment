@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Post</title>
+    <script type="module" src="/src/app.js"></script>
+  </head>
+
+  <body>
+    <div class="pageContainer">
+      <a href="/">
+        <img src="/public/images/noroff-logo.png" alt="Noroff Logo" />
+      </a> 
+      <h1>Edit Post</h1>
+
+      <form id="editPostForm" data-post-id="">
+        <div>
+          <label for="title" id="postTitle">Title:</label>
+          <input type="text" name="title" id="title" required>
+        </div>
+  
+        <div>
+          <label for="body" id="postBody">Body:</label>
+          <textarea name="body" id="body" required></textarea>
+        </div>
+  
+        <div>
+          <label for="tags">Tags (comma-separated):</label>
+          <input type="text" name="tags" id="tags">
+        </div>
+  
+        <div>
+          <label for="mediaUrl">Media URL:</label>
+          <input type="url" name="mediaUrl" id="mediaUrl">
+        </div>
+
+        <div>
+          <label for="mediaAlt">Media Alt:</label>
+          <input type="text" name="mediaAlt" id="mediaAlt">
+        </div>
+        
+
+  
+        <button type="submit" id="updatePostButton">Update Post</button>
+        <button type="submit" id="deletePostButton">Delete Post</button>
+      </form>
+    </div>
+  
+  </body>
+</html>

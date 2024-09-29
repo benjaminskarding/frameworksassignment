@@ -9,6 +9,10 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "esbuild": "^0.23.1",
     "vite": "^5.4.2"
+  },
+  "dependencies": {
+    "jsdoc": "^4.0.3"
   }
 }

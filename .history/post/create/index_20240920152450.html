@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Post</title>
+    <script type="module" src="/src/app.js"></script>
+  </head>
+  <body>
+    <div class="pageContainer">
+      <h1>Create Post</h1>
+
+      <form name="createPost">
+        <div>
+          <label for ="title">Title</label>
+          <input
+          id="title"
+          name="title"
+          type="text"
+          required
+          />
+        </div>
+        <div>
+          <label for="body">Body</label>
+          <textarea
+          id="body"
+          name="body"
+          type="text"
+          required
+          ></textarea>
+        </div>
+        <div>
+          <label for="tags">Tags</label>
+          <input
+          type="text"
+          required
+          />
+        </div>
+        <div>
+          <label for="image">Image</label>
+          <input
+          type="img"
+          />
+        </div>
+        <button>Create Post</button>
+      </form>
+
+    </div>
+
+  </body>
+</html>

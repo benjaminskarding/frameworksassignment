@@ -1,0 +1,28 @@
+@import url(_reset.css);
+
+
+body a {
+    text-decoration:  none;
+    color: inherit;
+}
+
+.temporaryPageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+
+.feedPageLoginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.introContainerLoginPage {
+
+}

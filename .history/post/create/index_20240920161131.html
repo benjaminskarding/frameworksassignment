@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Post</title>
+    <script type="module" src="/src/app.js"></script>
+  </head>
+  <body>
+    <div class="pageContainer">
+      <a href="/">
+        <img src="/public/images/noroff-logo.png" alt="Noroff Logo" />
+      </a> 
+      <h1>Create Post</h1>
+
+      <form name="createPost" id="createPostForm">
+        <div>
+          <label for ="title">Title</label>
+          <input
+          id="title"
+          name="title"
+          type="text"
+          required
+          />
+        </div>
+
+        <div>
+          <label for="body">Body</label>
+          <textarea
+          id="body"
+          name="body"
+          required
+          ></textarea>
+        </div>
+
+        <div>
+          <label for="tags">Tags</label>
+          <input
+          id="tags"
+          name="tags"
+          type="text"
+          placeholder="tag1, tag2"
+          required
+          />
+        </div>
+
+        <div>
+          <label for="image">Image</label>
+          <input
+          id="image"
+          name="image"
+          type="url"
+          placeholder="enter url of image here"
+          />
+        </div>
+
+        <button>Create Post</button>
+      </form>
+
+    </div>
+
+  </body>
+</html>

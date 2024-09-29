@@ -1,0 +1,57 @@
+@import url(_reset.css);
+
+
+body a {
+    text-decoration:  none;
+    color: inherit;
+}
+
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 2rem 0;
+}
+
+.feedContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 5rem;
+}
+
+
+.loginContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0 2rem 0;
+}
+
+#logoutBtn {
+    display: none;
+}
+
+/* Buttons */
+
+.createPostButton {
+    text-align: center; 
+    margin-top: 20px; 
+}
+  
+.create-post-link {
+display: inline-block; 
+padding: 10px 20px; 
+font-size: 16px; 
+color: white;
+background-color: #007bff; 
+border: none;
+border-radius: 5px; 
+text-decoration: none; 
+transition: background-color 0.3s; 
+}
+
+.create-post-link:hover {
+background-color: #0056b3; 
+}

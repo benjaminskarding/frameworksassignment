@@ -1,0 +1,32 @@
+@import url(_reset.css);
+
+
+body a {
+    text-decoration:  none;
+    color: inherit;
+}
+
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 2rem 0;
+}
+
+
+.loginContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0 2rem 0;
+}
+
+#logoutBtn {
+    display: none;
+}
+
+.createPostButton {
+    display: flex;
+    background-color: green;
+}

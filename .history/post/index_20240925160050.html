@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Page</title>
+    <script type="module" src="/src/app.js"></script>
+  </head>
+  <body>
+    <div class="pageContainer">
+      <a href="/">
+        <img src="/public/images/noroff-logo.png" alt="Noroff Logo" />
+      </a>
+      <h1>Post Page</h1>
+
+        <div id="postCont" class="postContainer">
+          <h1 id="postTitle">Post Title</h1>
+          <p id="postAuthor">Author: </p>
+          <p id="postTags">Tags: </p>
+          <p id="postBody">Post content will appear here...</p>
+          <img id="postMedia" style="display: none;" alt="Post media">
+        </div>
+        <div class="postButton">
+          <a href="/post/edit/?id=" class="postLink" id="updatePostButton">Update Post</a> 
+        </div>
+        <button id="deletePostButton">Delete Post</button>
+        
+
+    
+    </div>
+
+  </body>
+</html>

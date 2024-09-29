@@ -1,0 +1,48 @@
+@import url(_reset.css);
+
+
+body a {
+    text-decoration:  none;
+    color: inherit;
+}
+
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 2rem 0;
+}
+
+
+.loginContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0 2rem 0;
+}
+
+#logoutBtn {
+    display: none;
+}
+
+.createPostButton {
+    text-align: center; /* Center the button */
+    margin-top: 20px; /* Add some space above */
+  }
+  
+.create-post-link {
+display: inline-block; /* Make the link behave like a button */
+padding: 10px 20px; /* Add padding for a better look */
+font-size: 16px; /* Font size */
+color: white; /* Text color */
+background-color: #007bff; /* Button color */
+border: none; /* Remove border */
+border-radius: 5px; /* Rounded corners */
+text-decoration: none; /* Remove underline */
+transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.create-post-link:hover {
+background-color: #0056b3; /* Darker shade on hover */
+}
