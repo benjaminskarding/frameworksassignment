@@ -10,7 +10,11 @@ export async function onUpdatePost(event) {
     const editedData = {
         title: form.get('title'),
         body: form.get('body'),
-        
+        tags: form.get('tags') ? form.get('tags').split(',').map(tag => tag.trim()) : [], 
+        media: {
+          url: form.get('mediaUrl'),
+          alt: form.get('mediaAlt')
+        }
     };
 
     try {
