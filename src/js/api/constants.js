@@ -1,4 +1,3 @@
-
 export const API_KEY = import.meta.env.VITE_API_KEY;
 
 export const API_BASE = "https://v2.api.noroff.dev";
@@ -17,5 +16,4 @@ export const API_SOCIAL_POSTS = `${API_SOCIAL}/posts`;
 
 export const API_SOCIAL_PROFILES = `${API_SOCIAL}/profiles`;
 
-
-export const accessToken = localStorage.getItem('accessToken');
+export const accessToken = localStorage.getItem("accessToken");

@@ -2,7 +2,7 @@ import { API_KEY, accessToken } from "./constants";
 
 export function headers() {
   const headers = new Headers({
-    'Content-Type': 'application/json'
+    "Content-Type": "application/json",
   });
 
   if (API_KEY) {
@@ -10,7 +10,7 @@ export function headers() {
   }
 
   if (accessToken) {
-    headers.append('Authorization', `Bearer ${accessToken}`)
+    headers.append("Authorization", `Bearer ${accessToken}`);
   }
 
   return headers;
