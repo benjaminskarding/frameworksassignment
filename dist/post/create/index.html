@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Post</title>
+    <script type="module" crossorigin src="https://github.com/NoroffFEU/fed2-js2-ca-benjaminskarding/assets/app-d4TvjRaa.js"></script>
+    <link rel="stylesheet" crossorigin href="https://github.com/NoroffFEU/fed2-js2-ca-benjaminskarding/assets/app-DF3pJS2m.css">
+  </head>
+  <body class="bg-gray-100">
+    <div class="flex flex-col items-center min-h-screen py-10">
+      <a href="/" class="mb-6">
+        <img
+          src="https://github.com/NoroffFEU/fed2-js2-ca-benjaminskarding/assets/noroff-logo-cWZQt9D6.png"
+          alt="Noroff Logo"
+          class="h-12"
+        />
+      </a>
+      <h1 class="text-3xl font-bold mb-6">Create Post</h1>
+
+      <form
+        name="createPost"
+        id="createPostForm"
+        class="bg-white p-6 rounded-lg shadow-md w-full max-w-lg"
+      >
+        <div class="mb-4">
+          <label for="title" class="block text-sm font-medium text-gray-700"
+            >Title</label
+          >
+          <input
+            id="title"
+            name="title"
+            type="text"
+            required
+            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-500 focus:border-blue-500 p-2"
+          />
+        </div>
+
+        <div class="mb-4">
+          <label for="body" class="block text-sm font-medium text-gray-700"
+            >Body</label
+          >
+          <textarea
+            id="body"
+            name="body"
+            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-500 focus:border-blue-500 p-2"
+            rows="4"
+          ></textarea>
+        </div>
+
+        <div class="mb-4">
+          <label for="tags" class="block text-sm font-medium text-gray-700"
+            >Tags</label
+          >
+          <input
+            id="tags"
+            name="tags"
+            type="text"
+            placeholder="tag1, tag2"
+            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-500 focus:border-blue-500 p-2"
+          />
+        </div>
+
+        <div class="mb-4">
+          <label for="media" class="block text-sm font-medium text-gray-700"
+            >Image</label
+          >
+          <input
+            id="media"
+            name="media"
+            type="url"
+            placeholder="enter URL of image here"
+            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-500 focus:border-blue-500 p-2"
+          />
+        </div>
+
+        <button
+          type="submit"
+          class="w-full bg-blue-600 text-white font-semibold py-2 rounded hover:bg-blue-700 transition"
+        >
+          Create Post
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
