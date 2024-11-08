@@ -1,13 +1,5 @@
 export default async function router(pathname = window.location.pathname) {
-  const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
-
-  let adjustedPathname = pathname.replace(basePath, "");
-
-  if (!adjustedPathname.startsWith("/")) {
-    adjustedPathname = "/" + adjustedPathname;
-  }
-
-  switch (adjustedPathname) {
+  switch (pathname) {
     case "/":
       await import("./views/home.js");
       break;
