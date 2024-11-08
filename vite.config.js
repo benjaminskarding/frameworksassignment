@@ -3,7 +3,7 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   appType: "mpa",
-  base: "",
+  base: "https://github.com/NoroffFEU/fed2-js2-ca-benjaminskarding",
   build: {
     target: "esnext",
     rollupOptions: {
