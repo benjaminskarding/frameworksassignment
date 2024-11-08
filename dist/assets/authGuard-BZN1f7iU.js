@@ -1,1 +1,0 @@
-function t(){return localStorage.getItem("accessToken")?!0:(alert("You must be logged in to view this page."),window.location.href="/auth/",!1)}function o(){return localStorage.getItem("name")}export{t as a,o as g};
