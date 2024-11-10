@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,23 +7,41 @@
     <title>My Profile</title>
     <script type="module" src="/src/app.js"></script>
   </head>
-  <body>
-    <div class="pageContainer">
+  <body class="bg-gray-100 font-sans text-gray-800">
+    <div class="flex flex-col items-center min-h-screen py-10 space-y-6">
+      <header class="mb-6">
+        <a href="/">
+          <img
+            src="/public/images/noroff-logo.png"
+            alt="Noroff Logo"
+            class="h-12"
+          />
+        </a>
+      </header>
 
-      <a href="/">
-        <img src="/public/images/noroff-logo.png" alt="Noroff Logo" />
-      </a>
+      <h1 class="text-3xl font-bold text-gray-900">Profile</h1>
+      <h3 id="userNameDisplay" class="text-xl text-gray-700">Loading...</h3>
 
-      <h1>Profile</h1>
-
-      <h3 id="userNameDisplay">Loading...</h3>
-      <div id="profileDetails">
-        <img id="avatar" src="" alt="Profile Avatar">
-        <p id="profileEmail"></p>
+      <div
+        id="profileDetails"
+        class="bg-white p-6 rounded-lg shadow-md text-center max-w-sm w-full"
+      >
+        <img
+          id="avatar"
+          src=""
+          alt="Profile Avatar"
+          class="w-32 h-32 rounded-full mb-4 mx-auto"
+        />
+        <p id="profileEmail" class="text-gray-600"></p>
       </div>
 
-      <form name="updateProfile">
-        <button>Update Profile</button>
+      <form name="updateProfile" class="w-full max-w-sm text-center">
+        <button
+          type="submit"
+          class="bg-blue-500 text-white font-semibold py-2 px-6 rounded-lg hover:bg-blue-600 transition duration-200"
+        >
+          Update Profile
+        </button>
       </form>
     </div>
   </body>
