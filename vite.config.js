@@ -3,7 +3,7 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   appType: "mpa",
-  base: "/fed2-js2-ca-benjaminskarding/",
+  base: "/",
   build: {
     target: "esnext",
     outDir: "docs",
