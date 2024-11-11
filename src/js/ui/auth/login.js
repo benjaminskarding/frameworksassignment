@@ -1,4 +1,3 @@
-import { getKey } from "../../api/auth/key";
 import { login } from "../../api/auth/login";
 
 export async function onLogin(event) {
@@ -13,25 +12,23 @@ export async function onLogin(event) {
   try {
     const result = await login(userData);
 
-    const accessToken = result.data.accessToken;
+    console.log("Login result:", result);
 
+    const accessToken = result.data.accessToken;
     const name = result.data.name;
+
+    if (!accessToken) {
+      throw new Error("Access token not found in login response.");
+    }
 
     localStorage.setItem("accessToken", accessToken);
     localStorage.setItem("name", name);
 
-    let apiKey = localStorage.getItem(`${userData.email}_userApiKey`);
-    if (!apiKey) {
-      apiKey = await getKey(accessToken);
-      localStorage.setItem(`${userData.email}_userApiKey`, apiKey);
-    }
+    alert("Logged in successfully! Redirecting to your dashboard...");
 
-    alert("Logged in and API key created! Taking you to feed page...");
-
-    setTimeout(() => {
-      window.location.href = "/";
-    }, 2000);
+    window.location.href = "/";
   } catch (error) {
     console.error("Login failed:", error);
+    alert(`Login failed: ${error.message}`);
   }
 }
